@@ -79,8 +79,14 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+
   var primer = str1.length == str2.length
   return primer
+
+
+  var longitud = String.length(str1) == String.length(str2)
+  return longitud
+
   
 }
 
@@ -114,9 +120,13 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+
   var par1 = num % 2
   var par2 = par1 === 0
   return par2
+
+
+  var par
 
   
 }
@@ -166,7 +176,11 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
+
   var flaco = Math.ceil(num)
+
+  var flaco = Math.round(num)
+
   return flaco
 }
 
@@ -175,6 +189,9 @@ function numeroRandom() {
   //Pista: investigá qué hace el método Math.random()
   var rando = Math.random()
   return rando
+
+  return Math.random
+
 }
 
 function esPositivo(numero) {
@@ -203,7 +220,11 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+
   var hello = str + "!"
+
+  var hello = srt +"!"
+
   return hello
 }
 
@@ -211,7 +232,11 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+
   var henry = nombre + " " + apellido
+
+  var henry = mombre + " " + apellido
+
   return henry
   
 }
@@ -220,7 +245,11 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+
   var marti = "Hola" +" " + nombre + "!" 
+
+  var marti = nombre +" Martin!"
+
   return marti
   
 }
