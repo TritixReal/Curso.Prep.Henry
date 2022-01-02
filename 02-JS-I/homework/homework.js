@@ -179,8 +179,6 @@ function redondearHaciaArriba(num) {
 
   var flaco = Math.ceil(num)
 
-  var flaco = Math.round(num)
-
   return flaco
 }
 
@@ -223,7 +221,6 @@ function agregarSimboloExclamacion(str) {
 
   var hello = str + "!"
 
-  var hello = srt +"!"
 
   return hello
 }
@@ -235,7 +232,6 @@ function combinarNombres(nombre, apellido) {
 
   var henry = nombre + " " + apellido
 
-  var henry = mombre + " " + apellido
 
   return henry
   
@@ -247,8 +243,6 @@ function obtenerSaludo(nombre) {
   // Tu código:
 
   var marti = "Hola" +" " + nombre + "!" 
-
-  var marti = nombre +" Martin!"
 
   return marti
   
