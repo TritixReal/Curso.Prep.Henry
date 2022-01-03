@@ -109,9 +109,14 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   var nose = numero >=20 && numero <=50
+  var falso = numero <=19 || numero >=51
+  var yanose = 10 > 1
   if (nose === true) {
     return nose
-  }return !!nose
+  } else
+  if (falso === true) {
+    return yanose
+  }
 }
 
 function esEntero(numero) {
@@ -122,6 +127,10 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  var prueba = Math.floor (numero) === numero
+  if (prueba === true) {
+    return prueba
+  }
 }
 
 function fizzBuzz(numero) {
@@ -129,6 +138,24 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  var divtres = numero / 3 //&& Math.floor(divtres) === divtress
+  var divtrescomp = divtres === Math.floor(divtres)
+  var divcinco = numero / 5
+  var divcincocomp = divcinco === Math.floor(divcinco)
+  var divall = divtrescomp === divcincocomp
+  var mocho
+  if (divall) {
+    return "fizzbuzz"
+  }
+  if (divtrescomp === true) {
+    return "fizz"
+  } else 
+  if (divcincocomp === true) {
+    return "buzz"
+  } else
+  if (!divall) {
+    return numero
+  }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -138,6 +165,24 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  var pos1 = Math.sign(num1)
+  var pos2 = Math.sign(num2)
+  var pos3 = Math.sign(num3)
+  var compr = pos1 === 1
+  var compr = pos1 === -1
+  var mayor1 = num1 > num2 && num1 > num3
+  var mayor3 = num3 > num1 && num3 > num2
+  var suma = mayor3 + 1
+
+  if (mayor1 === compr) {
+    return "Número 1 es mayor y positivo"
+  } else
+  if (pos1 === -1 || pos2 === -1 || pos3 === -1){
+    return "Hay negativos"
+  } else
+  if (mayor3 === true){
+    return suma
+  }
 }
 
 function esPrimo(numero) {
