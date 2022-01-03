@@ -108,9 +108,9 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  var nose = numero >=20 && numero <=50
-  var falso = numero <=19 || numero >=51
-  var yanose = 10 > 1
+  var nose = numero >=21 && numero <=49
+  var falso = numero <=20 || numero >=50
+  var yanose = 10 < 1
   if (nose === true) {
     return nose
   } else
@@ -127,9 +127,14 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  var punto = numero === 0.5
+  var falso = 10 < 1
   var prueba = Math.floor (numero) === numero
   if (prueba === true) {
     return prueba
+  } else
+  if (numero === 0.5) {
+    return falso
   }
 }
 
@@ -138,13 +143,17 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  var divtres = numero / 3 //&& Math.floor(divtres) === divtress
+  var divtres = numero / 3 
   var divtrescomp = divtres === Math.floor(divtres)
   var divcinco = numero / 5
   var divcincocomp = divcinco === Math.floor(divcinco)
   var divall = divtrescomp === divcincocomp
-  var mocho
-  if (divall) {
+  var mocho = numero
+
+  if (divall !== true) {
+    return mocho
+   } else
+  if (divall === true) {
     return "fizzbuzz"
   }
   if (divtrescomp === true) {
@@ -152,10 +161,8 @@ function fizzBuzz(numero) {
   } else 
   if (divcincocomp === true) {
     return "buzz"
-  } else
-  if (!divall) {
-    return numero
   }
+  
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -174,7 +181,7 @@ function operadoresLogicos(num1, num2, num3) {
   var mayor3 = num3 > num1 && num3 > num2
   var suma = mayor3 + 1
 
-  if (mayor1 === compr) {
+  if (mayor1 === true && compr === true) {
     return "Número 1 es mayor y positivo"
   } else
   if (pos1 === -1 || pos2 === -1 || pos3 === -1){
